@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/font": "13.1.1",
+    "@react-three/drei": "^9.48.5",
     "@react-three/fiber": "^8.9.2",
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",
