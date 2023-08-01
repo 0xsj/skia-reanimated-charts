@@ -1,0 +1,75 @@
+---
+// Define props for the Box component
+type BoxProps = {
+  alignItems?: string;
+  justifyContent?: string;
+  flex?: boolean;
+  flexBasis?: string | number;
+  flexDirection?: string;
+  flexGrow?: boolean;
+  flexShrink?: boolean;
+  flexWrap?: string;
+  width?: string | number;
+  height?: string | number;
+  padding?: string | number;
+  margin?: string | number;
+  backgroundColor?: string;
+  children: any;
+  // Add any other props you want to support
+};
+
+const {
+  alignItems,
+  justifyContent,
+  flex,
+  flexBasis,
+  flexDirection,
+  flexGrow,
+  flexShrink,
+  flexWrap,
+  width,
+  height,
+  padding,
+  margin,
+  backgroundColor,
+  children,
+} = Astro.props;
+---
+
+<style>
+  /* Add global styles or define styles for the Box component */
+  .box {
+    display: flex;
+  }
+
+  .fill {
+    flex: 1;
+  }
+
+  .center {
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+
+<div
+  class="box"
+  style={{
+    alignItems: alignItems,
+    justifyContent: justifyContent,
+    flex: flex ? 1 : "unset",
+    flexBasis: flexBasis,
+    flexDirection: flexDirection,
+    flexGrow: flexGrow ? 1 : "unset",
+    flexShrink: flexShrink ? 1 : "unset",
+    flexWrap: flexWrap,
+    width: width,
+    height: height,
+    padding: padding,
+    margin: margin,
+    backgroundColor: backgroundColor,
+    // Add any other styles based on props
+  }}
+>
+  {children}
+</div>
