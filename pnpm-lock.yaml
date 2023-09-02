@@ -26,6 +26,9 @@ importers:
       cross-env:
         specifier: ^7.0.3
         version: 7.0.3
+      d3:
+        specifier: ^7.8.5
+        version: 7.8.5
       eslint:
         specifier: ^8.48.0
         version: 8.48.0
@@ -41,6 +44,9 @@ importers:
       react-native-url-polyfill:
         specifier: ^2.0.0
         version: 2.0.0(react-native@0.72.4)
+      simplex-noise:
+        specifier: ^4.0.1
+        version: 4.0.1
       turbo:
         specifier: ^1.10.13
         version: 1.10.13
@@ -15768,6 +15774,10 @@ packages:
     resolution: {integrity: sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==}
     dependencies:
       is-arrayish: 0.3.2
+    dev: false
+
+  /simplex-noise@4.0.1:
+    resolution: {integrity: sha512-zl/+bdSqW7HJOQ0oDbxrNYaF4F5ik0i7M6YOYmEoIJNtg16NpvWaTTM1Y7oV/7T0jFljawLgYPS81Uu2rsfo1A==}
     dev: false
 
   /sisteransi@1.0.5:
