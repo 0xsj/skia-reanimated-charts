@@ -51,7 +51,8 @@
     "**/out": true
   },
   "explorerExclude.backup": {},
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "nuxt.isNuxtApp": false
   // Turn this on if you want to debug the T4 App Tools Extension
   // "terminal.integrated.defaultProfile.windows": null
 }

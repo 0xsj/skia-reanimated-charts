@@ -6,7 +6,7 @@
   "scripts": {
     "ios": "cross-env TAMAGUI_TARGET=native expo run:ios",
     "android": "cross-env TAMAGUI_TARGET=native expo run:android",
-    "dev": "cross-env TAMAGUI_TARGET=native expo start --dev-client",
+    "dev": "cross-env TAMAGUI_TARGET=native expo start -c",
     "dev:prod": "cross-env TAMAGUI_TARGET=native expo start --no-dev --minify",
     "prebuild": "cross-env TAMAGUI_TARGET=native expo prebuild",
     "build:ios:preview": " eas build --platform ios --profile preview --local",
